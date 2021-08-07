@@ -1,0 +1,15 @@
+.shopping-container{
+    display: flexbox;   
+}
+
+.child {
+    justify-items: auto ;
+}
+
+.item-done{
+    text-decoration: line-through;
+}
+
+.item-not-done{
+    text-decoration: none;
+}
