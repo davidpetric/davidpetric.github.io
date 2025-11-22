@@ -1,14 +1,125 @@
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior .NET Developer | Enterprise Solutions</title>
+
+    <!-- SEO Meta Tags - OPTIMIZED -->
+    <title>Senior .NET Developer & Azure Cloud Contractor | C# Enterprise B2B Solutions</title>
+    <meta name="description"
+        content="Experienced .NET contractor specializing in C#, Azure cloud architecture, SQL Server optimization, and Entity Framework. Available for B2B enterprise projects across UK and EU. 7+ years expertise in ASP.NET migration and cloud solutions.">
+    <meta name="keywords"
+        content=".NET developer contractor, Azure cloud solutions, C# enterprise development, SQL optimization, Entity Framework, B2B contractor, .NET 8, ASP.NET migration, enterprise contractor">
+    <meta name="author" content="David Petric">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://davidpetric.github.io/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Senior .NET Developer & Azure Cloud Contractor | C# Enterprise Solutions">
+    <meta property="og:description"
+        content="Experienced .NET contractor specializing in C#, Azure, SQL, and Entity Framework. 7+ years enterprise development experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://davidpetric.github.io/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Senior .NET Developer & Azure Cloud Contractor">
+    <meta name="twitter:description"
+        content="B2B .NET contractor specializing in C#, Azure cloud, SQL optimization, and Entity Framework">
+
+    <!-- Structured Data - Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Petric",
+      "jobTitle": "Senior .NET Developer & Azure Cloud Contractor",
+      "description": "Full-stack .NET developer specializing in C#, Azure cloud solutions, SQL optimization, and Entity Framework for enterprise B2B projects",
+      "url": "https://davidpetric.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/davidpetric/",
+        "https://github.com/davidpetric"
+      ],
+      "knowsAbout": [".NET Development", "C#", "Azure", "SQL Server", "Entity Framework", "Cloud Architecture", "ASP.NET", "B2B Contracting"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Timișoara",
+        "addressCountry": "Romania"
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Senior .NET Developer",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "Romania"
+        },
+        "skills": ".NET, C#, Azure, SQL Server, Entity Framework, ASP.NET Core, Cloud Architecture"
+      }
+    }
+    </script>
+
+    <!-- Service Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": ".NET Development & Azure Cloud Contractor Services",
+      "provider": {
+        "@type": "Person",
+        "name": "David Petric"
+      },
+      "areaServed": ["United Kingdom", "European Union", "Romania"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": ".NET Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Full-Stack .NET Development",
+              "description": "Enterprise C# and .NET 8 web application development with Entity Framework"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Azure Cloud Solutions",
+              "description": "Azure infrastructure setup, CI/CD pipelines, and cloud migration services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SQL & Entity Framework Optimization",
+              "description": "Database performance tuning and ORM implementation for enterprise applications"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ASP.NET Migration Services",
+              "description": "Legacy ASP.NET WebForms to modern .NET Core migration"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+        as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -26,7 +137,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Custom scrollbar for code block */
         .code-scroll::-webkit-scrollbar {
             height: 6px;
         }
@@ -41,56 +151,8 @@
         }
     </style>
 
-    <style>
-        [data-element-path]:hover {
-            cursor: pointer !important;
-        }
-
-        .element-selection-indicator {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: rgba(59, 130, 246, 0.9);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-family: monospace;
-            z-index: 10000;
-            pointer-events: none;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-5px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <style>
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            to {
-                opacity: 0;
-                transform: translateY(-5px);
-            }
-        }
-    </style>
-
-    <meta name="disabled-font-classes"
-        content="font-playfair,font-geist,font-roboto,font-poppins,font-instrument-serif,font-merriweather,font-bricolage,font-jakarta,font-space-grotesk,font-work-sans,font-pt-serif,font-space-mono,font-montserrat,font-manrope,font-quicksand,font-nunito">
     <link id="all-fonts-link-font-geist-mono" rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap">
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&display=swap">
     <style id="all-fonts-style-font-geist-mono">
         .font-geist-mono {
             font-family: 'Geist Mono', monospace !important;
@@ -98,29 +160,24 @@
     </style>
 </head>
 
-<body class="bg-zinc-950 text-zinc-300 antialiased selection:bg-violet-500/30 selection:text-violet-200" style="">
+<body class="bg-zinc-950 text-zinc-300 antialiased selection:bg-violet-500/30 selection:text-violet-200">
 
-    <!-- Background (image) added by Aura -->
+    <!-- Background -->
     <div class="fixed top-0 w-full h-screen bg-cover bg-center -z-10 saturate-200 hue-rotate-90 brightness-50 invert-0 mix-blend-soft-light blur-sm"
         id="aura-image"
-        style="background-image: url(&quot;https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=3840&amp;q=80&quot;);; mask-image: linear-gradient(to bottom, transparent, black 0%, black 0%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 0%, transparent)"
+        style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=3840&q=80'); mask-image: linear-gradient(to bottom, transparent, black 0%, black 0%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 0%, transparent)"
         data-alpha-mask="0"></div>
-
-
-
-
-
-
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 border-b border-white/5 glass-nav">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <span class="text-indigo-100 font-medium tracking-tight font-geist-mono" style="">David Petric</span>
+                <span class="text-indigo-100 font-medium tracking-tight font-geist-mono">David Petric</span>
             </div>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-indigo-400" style="">
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-indigo-400">
                 <a href="#services" class="hover:text-white transition-colors font-geist-mono">Services</a>
                 <a href="#expertise" class="hover:text-white transition-colors font-geist-mono">Expertise</a>
+                <a href="#technologies" class="hover:text-white transition-colors font-geist-mono">Technologies</a>
                 <a href="#pricing" class="hover:text-white transition-colors font-geist-mono">Pricing</a>
                 <a href="#contact" class="hover:text-white transition-colors font-geist-mono">Contact</a>
             </div>
@@ -129,7 +186,7 @@
                 Start Project
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    data-lucide="arrow-right" class="lucide lucide-arrow-right w-3 h-3">
+                    class="w-3 h-3" aria-label="Arrow right icon">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -138,8 +195,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden" style="">
-        <!-- Background Gradients -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div
             class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] -z-10 opacity-50 pointer-events-none">
         </div>
@@ -153,54 +209,46 @@
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                     </span>
-                    Available for new contracts
+                    Available for new B2B contracts
                 </div>
-                <h1 class="text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 font-geist-mono font-semibold"
-                    style="transition: outline 0.1s ease-in-out;">
-                    Enterprise-Grade <br>
-                    <span class="glow-text font-geist-mono font-semibold"
-                        style="transition: outline 0.1s ease-in-out;">.NET Development</span> <br>
-                    &amp; Cloud Solutions
+                <h1
+                    class="text-5xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1] mb-6 font-geist-mono font-semibold">
+                    Senior <span class="glow-text">.NET Developer</span><br>
+                    & Azure Cloud <span class="glow-text">Contractor</span><br>
+                    for Enterprise B2B
                 </h1>
-                <p class="text-lg sm:text-xl text-indigo-400 mb-10 leading-relaxed max-w-lg font-light font-geist-mono"
-                    style="">
-                    Senior Full-Stack Developer with 7+ years of experience specializing in .NET, Azure, and modern web
-                    applications.
+                <p class="text-lg sm:text-xl text-indigo-400 mb-10 leading-relaxed max-w-lg font-light font-geist-mono">
+                    B2B contractor with 7+ years specializing in .NET development, C# programming, Azure cloud
+                    architecture, SQL Server optimization, and Entity Framework. Available for enterprise projects
+                    across UK and EU.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contact"
-                        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-indigo-950 font-medium rounded-lg hover:bg-indigo-200 transition-colors font-geist-mono"
-                        style="">
+                        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-indigo-950 font-medium rounded-lg hover:bg-indigo-200 transition-colors font-geist-mono">
                         Schedule a Consultation
                     </a>
-                    <!-- <a href="#work"
-                        class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-zinc-900 text-white border border-zinc-800 font-medium rounded-lg hover:bg-zinc-800 transition-colors">
-                        <i data-lucide="folder-open" class="w-4 h-4"></i>
-                        View Portfolio
-                    </a> -->
                 </div>
             </div>
 
-            <!-- Code Terminal Aesthetic -->
+            <!-- Code Terminal -->
             <div class="relative group">
                 <div
                     class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-fuchsia-600 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000">
                 </div>
-                <div class="relative bg-indigo-900 border border-indigo-800 rounded-xl shadow-2xl overflow-hidden"
-                    style="">
-                    <div class="flex items-center gap-2 px-4 py-3 border-b border-indigo-800 bg-indigo-900/50" style="">
+                <div class="relative bg-indigo-900 border border-indigo-800 rounded-xl shadow-2xl overflow-hidden">
+                    <div class="flex items-center gap-2 px-4 py-3 border-b border-indigo-800 bg-indigo-900/50">
                         <div class="flex gap-1.5">
                             <div class="w-3 h-3 rounded-full bg-cyan-500/20 border border-cyan-500/50"></div>
                             <div class="w-3 h-3 rounded-full bg-cyan-500/20 border border-cyan-500/50"></div>
                             <div class="w-3 h-3 rounded-full bg-cyan-500/20 border border-cyan-500/50"></div>
                         </div>
-                        <div class="ml-4 text-xs text-indigo-500 font-mono font-geist-mono" style="">Program.cs</div>
+                        <div class="ml-4 text-xs text-indigo-500 font-mono font-geist-mono">Program.cs</div>
                     </div>
                     <div class="p-6 overflow-x-auto code-scroll">
                         <pre class="font-mono text-sm leading-relaxed"><code class="font-geist-mono"><span class="text-blue-400 font-geist-mono">using</span> Microsoft.AspNetCore.Builder;
 <span class="text-blue-400 font-geist-mono">using</span> Microsoft.Extensions.Hosting;
 
-<span class="text-indigo-500 font-geist-mono" style="">// Initialize Enterprise Web Application</span>
+<span class="text-indigo-500 font-geist-mono">// Initialize Enterprise Web Application</span>
 <span class="text-blue-400 font-geist-mono">var</span> builder = WebApplication.CreateBuilder(args);
 
 <span class="text-green-400 font-geist-mono">builder</span>.Services.AddControllers();
@@ -224,18 +272,16 @@
     </section>
 
     <!-- Tech Stack Marquee -->
-    <div class="border-y border-white/5 bg-white/[0.02] py-10 overflow-hidden" style="">
+    <div class="border-y border-white/5 bg-white/[0.02] py-10 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-indigo-500 text-sm font-medium mb-8 tracking-wide uppercase font-geist-mono"
-                style="">Technologies &amp;
-                Frameworks</p>
+            <p class="text-center text-indigo-500 text-sm font-medium mb-8 tracking-wide uppercase font-geist-mono">Core
+                Technologies & Frameworks</p>
             <div
                 class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <!-- Using text for logo representations to avoid external images -->
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="boxes" class="lucide lucide-boxes w-5 h-5">
+                        class="w-5 h-5" aria-label=".NET Framework icon">
                         <path
                             d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z">
                         </path>
@@ -254,33 +300,37 @@
                         <path d="M12 8 7.26 5.15"></path>
                         <path d="m12 8 4.74-2.85"></path>
                         <path d="M12 13.5V8"></path>
-                    </svg> .NET 8</span>
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </svg> .NET 8 Development
+                </span>
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="cloud" class="lucide lucide-cloud w-5 h-5">
+                        class="w-5 h-5" aria-label="Azure cloud icon">
                         <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-                    </svg> Azure</span>
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </svg> Azure Cloud Services
+                </span>
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="database" class="lucide lucide-database w-5 h-5">
+                        class="w-5 h-5" aria-label="SQL database icon">
                         <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                         <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                         <path d="M3 12A9 3 0 0 0 21 12"></path>
-                    </svg> SQL</span>
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </svg> SQL Server & MySQL
+                </span>
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="code-2" class="lucide lucide-code-2 w-5 h-5">
+                        class="w-5 h-5" aria-label="React framework icon">
                         <path d="m18 16 4-4-4-4"></path>
                         <path d="m6 8-4 4 4 4"></path>
                         <path d="m14.5 4-5 16"></path>
-                    </svg> React</span>
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </svg> React & Angular
+                </span>
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="container" class="lucide lucide-container w-5 h-5">
+                        class="w-5 h-5" aria-label="Docker container icon">
                         <path
                             d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z">
                         </path>
@@ -288,39 +338,39 @@
                         <path d="m10 14 11.9-6.9"></path>
                         <path d="M14 19.8v-8.1"></path>
                         <path d="M18 17.5V9.4"></path>
-                    </svg> Docker</span>
-                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </svg> Docker & DevOps
+                </span>
+                <span class="text-xl font-semibold tracking-tight flex items-center gap-2 font-geist-mono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="braces" class="lucide lucide-braces w-5 h-5">
+                        class="w-5 h-5" aria-label="Entity Framework icon">
                         <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"></path>
                         <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path>
-                    </svg> TypeScript</span>
+                    </svg> Entity Framework
+                </span>
             </div>
         </div>
     </div>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 lg:py-32" style="">
-        <div class="max-w-7xl mx-auto px-6" style="">
+    <section id="services" class="py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-20">
-                <h2 class="text-3xl md:text-4xl text-white tracking-tight mb-4 font-geist-mono font-semibold"
-                    style="transition: outline 0.1s ease-in-out;">Engineering scalable
-                    solutions</h2>
-                <p class="text-indigo-400 text-lg font-light font-geist-mono" style="">Full-cycle development services
-                    from architecture design to
-                    production deployment.</p>
+                <h2 class="text-3xl md:text-4xl text-white tracking-tight mb-4 font-geist-mono font-semibold">B2B .NET
+                    Development & Cloud Contractor Services</h2>
+                <p class="text-indigo-400 text-lg font-light font-geist-mono">Full-cycle enterprise development from
+                    architecture design to Azure cloud deployment with Entity Framework and SQL optimization.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6" style="">
+            <div class="grid md:grid-cols-2 gap-6">
                 <!-- Service 1 -->
-                <div class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-blue-500/30 transition-colors duration-300"
-                    style="">
-                    <div class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-blue-500/20 group-hover:text-blue-300 transition-all"
-                        style="">
+                <div
+                    class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-blue-500/30 transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-blue-500/20 group-hover:text-blue-300 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="cpu" class="lucide lucide-cpu w-6 h-6">
+                            class="w-6 h-6" aria-label="CPU processing icon">
                             <path d="M12 20v2"></path>
                             <path d="M12 2v2"></path>
                             <path d="M17 20v2"></path>
@@ -337,72 +387,91 @@
                             <rect x="8" y="8" width="8" height="8" rx="1"></rect>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Full-Stack .NET Development</h3>
-                    <ul class="space-y-2 text-indigo-400 text-sm" style="">
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5">
+                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">.NET Development Contractor Services
+                    </h3>
+                    <ul class="space-y-2 text-indigo-400 text-sm">
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Custom web apps with .NET 6+</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5">
+                            </svg>
+                            Enterprise .NET 8 & C# web applications
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> ASP.NET WebForms modernization</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-blue-500 mt-0.5">
+                            </svg>
+                            ASP.NET WebForms to .NET Core migration
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> High-performance RESTful APIs</li>
+                            </svg>
+                            RESTful API development with Entity Framework
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-green-500/30 transition-colors duration-300"
-                    style="">
-                    <div class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-green-500/20 group-hover:text-green-300 transition-all"
-                        style="">
+                <div
+                    class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-green-500/30 transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-green-500/20 group-hover:text-green-300 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="cloud-lightning" class="lucide lucide-cloud-lightning w-6 h-6">
+                            class="w-6 h-6" aria-label="Cloud lightning icon">
                             <path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973"></path>
                             <path d="m13 12-3 5h4l-3 5"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Azure Cloud Solutions</h3>
-                    <ul class="space-y-2 text-indigo-400 text-sm" style="">
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-green-500 mt-0.5">
+                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Azure Cloud & DevOps Solutions</h3>
+                    <ul class="space-y-2 text-indigo-400 text-sm">
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Infrastructure setup &amp; optimization</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-green-500 mt-0.5">
+                            </svg>
+                            Azure infrastructure setup & optimization
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> CI/CD pipeline automation (DevOps)</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-green-500 mt-0.5">
+                            </svg>
+                            CI/CD pipeline automation with Azure DevOps
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Secure cloud migration strategies</li>
+                            </svg>
+                            Enterprise cloud migration strategies
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-cyan-500/30 transition-colors duration-300"
-                    style="">
-                    <div class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-cyan-500/20 group-hover:text-cyan-300 transition-all"
-                        style="">
+                <div
+                    class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-cyan-500/30 transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-cyan-500/20 group-hover:text-cyan-300 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="database-zap" class="lucide lucide-database-zap w-6 h-6">
+                            class="w-6 h-6" aria-label="Database optimization icon">
                             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                             <path d="M3 5V19A9 3 0 0 0 15 21.84"></path>
                             <path d="M21 5V8"></path>
@@ -410,220 +479,349 @@
                             <path d="M3 12A9 3 0 0 0 14.59 14.87"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Database &amp; Performance</h3>
-                    <ul class="space-y-2 text-indigo-400 text-sm" style="">
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
+                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">SQL & Entity Framework Performance
+                    </h3>
+                    <ul class="space-y-2 text-indigo-400 text-sm">
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> SQL Server/MySQL optimization</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
-                                <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Complex query tuning for large datasets
+                            </svg>
+                            SQL Server & MySQL query optimization
                         </li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Entity Framework best practices</li>
+                            </svg>
+                            Complex query tuning for large datasets
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg>
+                            Entity Framework Core & EF6 best practices
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-cyan-500/30 transition-colors duration-300"
-                    style="">
-                    <div class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-cyan-500/20 group-hover:text-cyan-300 transition-all"
-                        style="">
+                <div
+                    class="group p-8 rounded-2xl bg-indigo-900 border border-white/5 hover:border-purple-500/30 transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-indigo-800 flex items-center justify-center mb-6 group-hover:bg-purple-500/20 group-hover:text-purple-300 transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="search-code" class="lucide lucide-search-code w-6 h-6">
+                            class="w-6 h-6" aria-label="Code review icon">
                             <path d="m13 13.5 2-2.5-2-2.5"></path>
                             <path d="m21 21-4.3-4.3"></path>
-                            <path d="M9 8.5 7 11l2 2.5"></path>
+                            <path d="m9 8.5-2 2.5 2 2.5"></path>
                             <circle cx="11" cy="11" r="8"></circle>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Consulting &amp; Code Review</h3>
-                    <ul class="space-y-2 text-indigo-400 text-sm" style="">
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
+                    <h3 class="text-xl font-medium text-white mb-3 font-geist-mono">Architecture Consulting & Code
+                        Review</h3>
+                    <ul class="space-y-2 text-indigo-400 text-sm">
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Architecture design consulting</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
+                            </svg>
+                            Enterprise architecture design consulting
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Legacy code refactoring</li>
-                        <li class="flex items-start gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check"
-                                class="lucide lucide-check w-4 h-4 text-cyan-500 mt-0.5">
+                            </svg>
+                            Legacy ASP.NET code refactoring
+                        </li>
+                        <li class="flex items-start gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0"
+                                aria-label="Checkmark">
                                 <path d="M20 6 9 17l-5-5"></path>
-                            </svg> Team mentoring &amp; guidance</li>
+                            </svg>
+                            Team mentoring & C# best practices
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Work With Me -->
-    <section id="expertise" class="py-24 bg-indigo-900/30 border-y border-white/5" style="">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16" style="">
-            <div class="lg:w-1/2" style="">
-                <h2 class="text-3xl text-white tracking-tight mb-6 font-geist-mono font-semibold"
-                    style="transition: outline 0.1s ease-in-out;">Why work with me?</h2>
-                <p class="text-indigo-400 mb-8 font-light leading-relaxed font-geist-mono" style="">
-                    I deliver enterprise-grade code with the agility of an independent contractor. Based in Romania
-                    (CET), I offer flexible overlap hours for UK and EU clients, ensuring seamless communication.
+    <!-- Technologies Deep Dive Section - NEW -->
+    <section id="technologies" class="py-24 bg-zinc-900/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl text-white mb-4 font-geist-mono font-semibold">Core Technologies & Expertise</h2>
+                <p class="text-indigo-400 text-lg font-light font-geist-mono">Deep technical expertise across the full
+                    .NET and Azure cloud stack</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-zinc-900 border border-white/5 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+                    <h3 class="text-xl text-white mb-4 font-geist-mono font-medium">.NET & C# Development</h3>
+                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">Expert-level .NET Framework and .NET Core
+                        development with C# for enterprise applications, including RESTful APIs and microservices
+                        architecture.</p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">•</span>
+                            <span>.NET 6, .NET 8, .NET Framework 4.x</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">•</span>
+                            <span>C# programming & LINQ queries</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">•</span>
+                            <span>ASP.NET Core Web API development</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400 mt-1">•</span>
+                            <span>ASP.NET WebForms legacy migration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-zinc-900 border border-white/5 rounded-xl p-6 hover:border-green-500/30 transition-colors">
+                    <h3 class="text-xl text-white mb-4 font-geist-mono font-medium">Azure Cloud & DevOps</h3>
+                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">Azure cloud infrastructure, deployment
+                        automation, and CI/CD pipeline implementation for enterprise-scale applications.</p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-400 mt-1">•</span>
+                            <span>Azure App Services & Azure Functions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-400 mt-1">•</span>
+                            <span>Azure SQL Database & storage solutions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-400 mt-1">•</span>
+                            <span>Azure DevOps CI/CD pipelines</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-400 mt-1">•</span>
+                            <span>Cloud architecture design & migration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-zinc-900 border border-white/5 rounded-xl p-6 hover:border-cyan-500/30 transition-colors">
+                    <h3 class="text-xl text-white mb-4 font-geist-mono font-medium">Database & ORM</h3>
+                    <p class="text-zinc-400 text-sm mb-4 leading-relaxed">SQL Server and MySQL optimization with Entity
+                        Framework expertise for high-performance data access layers.</p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">•</span>
+                            <span>SQL Server performance tuning & indexing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">•</span>
+                            <span>Entity Framework Core & EF6</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">•</span>
+                            <span>MySQL query optimization for large datasets</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-1">•</span>
+                            <span>Database schema design & migrations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section id="expertise" class="py-24 bg-indigo-900/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl text-white tracking-tight mb-6 font-geist-mono font-semibold">Why Hire a B2B .NET
+                    Contractor?</h2>
+                <p class="text-indigo-400 mb-6 font-light leading-relaxed font-geist-mono">
+                    Working with an experienced .NET contractor offers flexibility and expertise for enterprise
+                    projects. As a B2B contractor, I provide specialized C# development, Azure cloud solutions, and SQL
+                    optimization without the overhead of full-time employment.
+                </p>
+                <p class="text-indigo-400 mb-8 font-light leading-relaxed font-geist-mono">
+                    I deliver enterprise-grade .NET and C# development with the agility of an independent B2B
+                    contractor. Based in Timișoara, Romania (CET timezone), I offer flexible overlap hours for UK and EU
+                    enterprise clients, ensuring seamless communication for <a href="#technologies"
+                        class="text-blue-400 hover:underline">Azure cloud projects</a> and <a href="#services"
+                        class="text-blue-400 hover:underline">SQL optimization work</a>.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="flex gap-3">
-                        <div class="mt-1 p-1 rounded text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" data-lucide="clock"
-                                class="lucide lucide-clock w-4 h-4">
+                        <div class="mt-1 p-1 rounded text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4" aria-label="Clock icon">
                                 <path d="M12 6v6l4 2"></path>
                                 <circle cx="12" cy="12" r="10"></circle>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="text-white text-sm font-medium font-geist-mono">Timezone Aligned</h4>
-                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono" style="">Romania (CET) - Easy sync
-                                with Europe.</p>
+                            <h4 class="text-white text-sm font-medium font-geist-mono">EU Timezone Aligned</h4>
+                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono">Romania (CET) - Easy sync with UK &
+                                Europe</p>
                         </div>
                     </div>
                     <div class="flex gap-3">
-                        <div class="mt-1 p-1 rounded text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" data-lucide="shield-check"
-                                class="lucide lucide-shield-check w-4 h-4">
+                        <div class="mt-1 p-1 rounded text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4" aria-label="Shield check icon">
                                 <path
                                     d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
                                 </path>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="text-white text-sm font-medium font-geist-mono">Production Ready</h4>
-                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono" style="">Clean, testable,
-                                maintainable code.</p>
+                            <h4 class="text-white text-sm font-medium font-geist-mono">Production Ready Code</h4>
+                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono">Clean, testable, enterprise-grade C#
+                            </p>
                         </div>
                     </div>
                     <div class="flex gap-3">
-                        <div class="mt-1 p-1 rounded text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" data-lucide="message-square"
-                                class="lucide lucide-message-square w-4 h-4">
+                        <div class="mt-1 p-1 rounded text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4" aria-label="Message icon">
                                 <path
                                     d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
                                 </path>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
                             <h4 class="text-white text-sm font-medium font-geist-mono">Fast Communication</h4>
-                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono" style="">Slack, Teams, or Email.
-                                Daily updates.</p>
+                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono">Slack, Teams, Email - Daily updates
+                            </p>
                         </div>
                     </div>
                     <div class="flex gap-3">
-                        <div class="mt-1 p-1 rounded text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw"
-                                class="lucide lucide-refresh-cw w-4 h-4">
+                        <div class="mt-1 p-1 rounded text-blue-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4" aria-label="Refresh icon">
                                 <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                                 <path d="M21 3v5h-5"></path>
                                 <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
                                 <path d="M8 16H3v5"></path>
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div>
-                            <h4 class="text-white text-sm font-medium font-geist-mono">Modernization</h4>
-                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono" style="">Expert in upgrading legacy
-                                systems.</p>
+                            <h4 class="text-white text-sm font-medium font-geist-mono">Legacy Modernization</h4>
+                            <p class="text-indigo-500 text-xs mt-1 font-geist-mono">Expert in ASP.NET migration to .NET
+                                Core</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="lg:w-1/2 space-y-6">
-                <!-- Experience Item -->
                 <div class="relative pl-8 border-l border-white/10">
-                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-indigo-800 border border-indigo-600"
-                        style="">
+                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-indigo-800 border border-indigo-600">
                     </div>
-                    <h3 class="text-white font-medium font-geist-mono">Senior Full-Stack Developer</h3>
-                    <p class="text-indigo-500 text-sm mb-2 font-geist-mono" style="">7+ Years Experience</p>
-                    <p class="text-indigo-400 text-sm font-light font-geist-mono" style="">Deep expertise in the .NET
-                        ecosystem, moving from
-                        Framework 4.x to modern .NET 6/8 architectures.</p>
+                    <h3 class="text-white font-medium font-geist-mono">Senior .NET Developer</h3>
+                    <p class="text-indigo-500 text-sm mb-2 font-geist-mono">7+ Years Professional Experience</p>
+                    <p class="text-indigo-400 text-sm font-light font-geist-mono">Deep expertise in the .NET ecosystem,
+                        from Framework 4.x to modern .NET 6/8 architectures. Specialized in C# programming, ASP.NET
+                        Core, and Entity Framework development for enterprise applications.</p>
                 </div>
-                <!-- Experience Item -->
                 <div class="relative pl-8 border-l border-white/10">
-                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-indigo-800 border border-indigo-600"
-                        style="">
+                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-indigo-800 border border-indigo-600">
                     </div>
                     <h3 class="text-white font-medium font-geist-mono">Azure Cloud Specialist</h3>
-                    <p class="text-indigo-500 text-sm mb-2 font-geist-mono" style="">3+ Years Experience</p>
-                    <p class="text-indigo-400 text-sm font-light font-geist-mono" style="">Implementing serverless
-                        functions, App Services, SQL
-                        Database, and robust CI/CD pipelines.</p>
+                    <p class="text-indigo-500 text-sm mb-2 font-geist-mono">3+ Years Cloud Experience</p>
+                    <p class="text-indigo-400 text-sm font-light font-geist-mono">Implementing Azure serverless
+                        functions, App Services, SQL Database, and robust CI/CD pipelines with Azure DevOps. Expert in
+                        cloud migration strategies for enterprise clients.</p>
+                </div>
+                <div class="relative pl-8 border-l border-white/10">
+                    <div class="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-indigo-800 border border-indigo-600">
+                    </div>
+                    <h3 class="text-white font-medium font-geist-mono">Database Performance Expert</h3>
+                    <p class="text-indigo-500 text-sm mb-2 font-geist-mono">SQL Server & MySQL Optimization</p>
+                    <p class="text-indigo-400 text-sm font-light font-geist-mono">Specialized in complex query
+                        optimization for large datasets, Entity Framework performance tuning, and database schema design
+                        for high-traffic applications.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-24 lg:py-32" style="">
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl text-white tracking-tight font-geist-mono font-semibold"
-                    style="transition: outline 0.1s ease-in-out;">Pricing</h2>
-                <p class="text-indigo-400 mt-4 font-geist-mono" style="">Flexible engagement models tailored to your
-                    project needs.</p>
+                <h2 class="text-3xl text-white tracking-tight font-geist-mono font-semibold">B2B Contract Pricing</h2>
+                <p class="text-indigo-400 mt-4 font-geist-mono">Flexible engagement models tailored to your enterprise
+                    project needs</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Hourly -->
-                <div class="bg-indigo-900 border border-white/5 rounded-2xl p-8 flex flex-col relative overflow-hidden group hover:border-blue-500/20 transition-all"
-                    style="">
+                <div
+                    class="bg-indigo-900 border border-white/5 rounded-2xl p-8 flex flex-col relative overflow-hidden group hover:border-blue-500/20 transition-all">
                     <div
                         class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-[50px] pointer-events-none">
                     </div>
                     <div class="mb-6">
                         <h3 class="text-lg font-medium text-white font-geist-mono">Hourly Rate</h3>
-                        <p class="text-indigo-500 text-sm mt-1 font-geist-mono" style="">For ongoing support &amp;
-                            consulting</p>
+                        <p class="text-indigo-500 text-sm mt-1 font-geist-mono">For ongoing support & consulting</p>
                     </div>
                     <div class="flex items-baseline gap-1 mb-6">
-                        <span class="text-4xl text-white tracking-tight font-geist-mono font-semibold"
-                            style="transition: outline 0.1s ease-in-out;">Contact for €</span>
-                        <span class="text-indigo-500 font-geist-mono" style="">/hour</span>
+                        <span class="text-4xl text-white tracking-tight font-geist-mono font-semibold">Contact for
+                            €</span>
+                        <span class="text-indigo-500 font-geist-mono">/hour</span>
                     </div>
-                    <ul class="space-y-3 text-sm text-indigo-400 flex-1" style="">
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-blue-500">
+                    <ul class="space-y-3 text-sm text-indigo-400 flex-1">
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> Pay only for tracked time</li>
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-blue-500">
+                            </svg> Pay only for tracked time
+                        </li>
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> Detailed timesheets</li>
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-blue-500">
+                            </svg> Detailed timesheets
+                        </li>
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-blue-500 flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> No long-term commitment</li>
+                            </svg> No long-term commitment
+                        </li>
                     </ul>
                     <a href="#contact"
                         class="mt-8 w-full py-3 rounded-lg border border-white/10 text-white font-medium text-sm hover:bg-white/5 text-center transition-colors font-geist-mono">Book
@@ -631,45 +829,48 @@
                 </div>
 
                 <!-- Project -->
-                <div class="bg-gradient-to-b from-indigo-800 to-indigo-900 border border-white/10 rounded-2xl p-8 flex flex-col relative shadow-2xl"
-                    style="">
+                <div
+                    class="bg-gradient-to-b from-indigo-800 to-indigo-900 border border-white/10 rounded-2xl p-8 flex flex-col relative shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-green-500/5 rounded-2xl"></div>
                     <div class="mb-6 relative z-10">
                         <h3 class="text-lg font-medium text-white font-geist-mono">Project Based</h3>
-                        <p class="text-indigo-400 text-sm mt-1 font-geist-mono" style="">For defined scopes &amp;
-                            deliverables</p>
+                        <p class="text-indigo-400 text-sm mt-1 font-geist-mono">For defined scopes & deliverables</p>
                     </div>
                     <div class="flex items-baseline gap-1 mb-6 relative z-10">
-                        <span class="text-4xl text-white tracking-tight font-geist-mono font-semibold"
-                            style="transition: outline 0.1s ease-in-out;">Custom</span>
-                        <span class="text-indigo-400 text-sm ml-2 font-geist-mono" style="">Quote</span>
+                        <span class="text-4xl text-white tracking-tight font-geist-mono font-semibold">Custom</span>
+                        <span class="text-indigo-400 text-sm ml-2 font-geist-mono">Quote</span>
                     </div>
-                    <ul class="space-y-3 text-sm text-indigo-300 flex-1 relative z-10" style="">
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-white">
+                    <ul class="space-y-3 text-sm text-indigo-300 flex-1 relative z-10">
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-white flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> Fixed price &amp; timeline</li>
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-white">
+                            </svg> Fixed price & timeline
+                        </li>
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-white flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> Comprehensive requirement analysis</li>
-                        <li class="flex items-center gap-2 font-geist-mono"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                data-lucide="check-circle-2" class="lucide lucide-check-circle-2 w-4 h-4 text-white">
+                            </svg> Comprehensive requirement analysis
+                        </li>
+                        <li class="flex items-center gap-2 font-geist-mono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 text-white flex-shrink-0"
+                                aria-label="Check circle">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
-                            </svg> Milestone-based payments</li>
+                            </svg> Milestone-based payments
+                        </li>
                     </ul>
                     <a href="#contact"
-                        class="relative z-10 mt-8 w-full py-3 rounded-lg bg-white text-indigo-950 font-medium text-sm hover:bg-indigo-200 text-center transition-colors font-geist-mono"
-                        style="">Get
+                        class="relative z-10 mt-8 w-full py-3 rounded-lg bg-white text-indigo-950 font-medium text-sm hover:bg-indigo-200 text-center transition-colors font-geist-mono">Get
                         a Quote</a>
                 </div>
             </div>
@@ -677,66 +878,76 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 border-t border-white/5" style="">
+    <section class="py-24 border-t border-white/5">
         <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-2xl text-white mb-10 font-geist-mono font-semibold"
-                style="transition: outline 0.1s ease-in-out;">Frequently Asked Questions</h2>
+            <h2 class="text-2xl text-white mb-10 font-geist-mono font-semibold">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 <details
-                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300"
-                    style="">
+                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300">
                     <summary
-                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono"
-                        style="">
-                        Do you handle legacy ASP.NET migration?
+                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono">
+                        Do you handle legacy ASP.NET migration to .NET Core?
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="chevron-down"
-                            class="lucide lucide-chevron-down w-4 h-4 transition-transform group-open:rotate-180">
+                            class="w-4 h-4 transition-transform group-open:rotate-180" aria-label="Chevron down">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
-                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono" style="">
-                        Yes, migrating legacy ASP.NET WebForms or MVC apps to modern .NET 6/8 with React or Angular
-                        frontends is a core part of my expertise.
+                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono">
+                        Yes, migrating legacy ASP.NET WebForms or MVC applications to modern .NET 6/8 with React or
+                        Angular frontends is a core part of my expertise. I've successfully completed multiple
+                        enterprise migration projects with Entity Framework integration and Azure cloud deployment.
                     </div>
                 </details>
                 <details
-                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300"
-                    style="">
+                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300">
                     <summary
-                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono"
-                        style="">
-                        Are you available for full-time contracts?
+                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono">
+                        Are you available for full-time B2B contracts?
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="chevron-down"
-                            class="lucide lucide-chevron-down w-4 h-4 transition-transform group-open:rotate-180">
+                            class="w-4 h-4 transition-transform group-open:rotate-180" aria-label="Chevron down">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
-                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono" style="">
-                        I primarily work on a contract basis (B2B), but I am open to long-term engagements (6+ months)
-                        if the project is challenging and the fit is right.
+                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono">
+                        I primarily work on a B2B contract basis for enterprise clients, and I am open to long-term
+                        engagements (6+ months) if the project involves challenging .NET development work, Azure cloud
+                        architecture, or SQL optimization at scale.
                     </div>
                 </details>
                 <details
-                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300"
-                    style="">
+                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300">
                     <summary
-                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono"
-                        style="">
-                        How do we handle communication?
+                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono">
+                        How do we handle communication for remote projects?
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            data-lucide="chevron-down"
-                            class="lucide lucide-chevron-down w-4 h-4 transition-transform group-open:rotate-180">
+                            class="w-4 h-4 transition-transform group-open:rotate-180" aria-label="Chevron down">
                             <path d="m6 9 6 6 6-6"></path>
                         </svg>
                     </summary>
-                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono" style="">
-                        I integrate with your team's tools (Slack, MS Teams, Jira). I provide daily standups (written or
-                        video) and weekly sprint demos.
+                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono">
+                        I integrate seamlessly with your team's tools (Slack, MS Teams, Jira, Azure DevOps). I provide
+                        daily written standups or video calls and weekly sprint demos to ensure transparent project
+                        progress on all .NET development and cloud infrastructure work.
+                    </div>
+                </details>
+                <details
+                    class="group bg-indigo-900/50 border border-white/5 rounded-lg open:border-white/10 transition-all duration-300">
+                    <summary
+                        class="flex items-center justify-between p-4 cursor-pointer text-indigo-300 font-medium group-hover:text-white font-geist-mono">
+                        What's your experience with Entity Framework and SQL optimization?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-4 h-4 transition-transform group-open:rotate-180" aria-label="Chevron down">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-sm text-indigo-400 leading-relaxed font-geist-mono">
+                        I have extensive experience with both Entity Framework 6 and Entity Framework Core, including
+                        complex query optimization for large datasets (millions of records), database performance
+                        tuning, and implementing proper indexing strategies for SQL Server and MySQL databases.
                     </div>
                 </details>
             </div>
@@ -744,30 +955,27 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 relative overflow-hidden" style="">
+    <section id="contact" class="py-24 relative overflow-hidden">
         <div
             class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent">
         </div>
-        <div class="max-w-7xl mx-auto px-6" style="">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mx-auto px-6">
                 <div>
-                    <h2 class="text-3xl sm:text-4xl text-white tracking-tight mb-6 font-geist-mono font-semibold"
-                        style="transition: outline 0.1s ease-in-out;">Let's discuss your
-                        project</h2>
-                    <p class="text-indigo-400 mb-8 text-lg font-light font-geist-mono" style="">Ready to modernize your
-                        stack or build something
-                        new? Schedule a free 30-minute technical consultation.</p>
+                    <h2 class="text-3xl sm:text-4xl text-white tracking-tight mb-6 font-geist-mono font-semibold">Let's
+                        discuss your .NET project</h2>
+                    <p class="text-indigo-400 mb-8 text-lg font-light font-geist-mono">Ready to modernize your stack
+                        with .NET Core, migrate to Azure cloud, or optimize your Entity Framework implementation?
+                        Schedule a free 30-minute technical consultation.</p>
 
                     <div class="space-y-6">
                         <a href="https://www.linkedin.com/in/davidpetric/"
-                            class="flex items-center gap-4 p-4 rounded-xl bg-indigo-900/50 border border-white/5 hover:border-green-500/30 transition-colors group"
-                            style="">
-                            <div class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center group-hover:text-white transition-colors"
-                                style="">
+                            class="flex items-center gap-4 p-4 rounded-xl bg-indigo-900/50 border border-white/5 hover:border-green-500/30 transition-colors group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-indigo-800 flex items-center justify-center group-hover:text-white transition-colors">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" data-lucide="linkedin"
-                                    class="lucide lucide-linkedin w-5 h-5">
+                                    stroke-linejoin="round" class="w-5 h-5" aria-label="LinkedIn icon">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -776,7 +984,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <p class="text-sm text-indigo-500 font-geist-mono" style="">Connect on LinkedIn</p>
+                                <p class="text-sm text-indigo-500 font-geist-mono">Connect on LinkedIn</p>
                                 <p class="text-white font-medium font-geist-mono">linkedin.com/in/davidpetric</p>
                             </div>
                         </a>
@@ -787,30 +995,33 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/5 py-12 bg-indigo-950" style="">
+    <footer class="border-t border-white/5 py-12 bg-indigo-950">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="text-indigo-500 text-sm font-geist-mono" style="">
-                © 2026 David Petric. All rights reserved.
+            <div class="text-indigo-500 text-sm font-geist-mono">
+                © 2026 David Petric - Senior .NET Developer & Azure Cloud Contractor. All rights reserved.
             </div>
             <div class="flex items-center gap-6">
                 <a href="https://github.com/davidpetric" class="text-indigo-500 hover:text-white transition-colors"
-                    style=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" data-lucide="github" class="lucide lucide-github w-5 h-5">
+                    aria-label="GitHub profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-5 h-5">
                         <path
                             d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
                         </path>
                         <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                    </svg></a>
+                    </svg>
+                </a>
                 <a href="https://www.linkedin.com/in/davidpetric/"
-                    class="text-indigo-500 hover:text-white transition-colors" style=""><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    class="text-indigo-500 hover:text-white transition-colors" aria-label="LinkedIn profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        data-lucide="linkedin" class="lucide lucide-linkedin w-5 h-5">
+                        class="w-5 h-5">
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                         <rect width="4" height="12" x="2" y="9"></rect>
                         <circle cx="4" cy="4" r="2"></circle>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -818,8 +1029,6 @@
     <script>
         lucide.createIcons();
     </script>
-
-
 
 </body>
 
