@@ -1,1 +1,0 @@
-# davidpetric.github.io
